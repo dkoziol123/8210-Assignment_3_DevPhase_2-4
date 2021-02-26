@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Type{% endblock title %}
+Welcome our Prefered Recreation Type
+{% block content %}
+  {% for Type in type_list %}
+    <div class="card">
+      <div class="card-header">
+          <br>
+          <br>
+        <span class="font-weight-bold">{{ Type.Recreation_Name }}</span>
+          <br>
+        <span class="font-weight-bold">Recreation Type Indoor: {{ Type.Recreation_Type_Indoor}} </span>
+          <br>
+        <span class="font-weight-bold">Recreation Type Outdoor: {{ Type.Recreation_Type_Outdoor }} </span>
+          <br>
+        <span class="font-weight-bold">Public: {{ Type.Public}} </span>
+          <br>
+        <span class="font-weight-bold">Private: {{ Type.Private }} </span>
+          <br>
+
+      </div>
+
+    </div>
+  {% endfor %}
+{% endblock content %}

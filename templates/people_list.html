@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Roledex{% endblock title %}
+Welcome to the Personal Rolodex
+{% block content %}
+  {% for People in people_list %}
+    <div class="card">
+      <div class="card-header">
+          <br>
+          <br>
+        <span class="font-weight-bold">{{ People.name }}</span>
+          <br>
+        <span class="font-weight-bold">Phone Number: {{ People.phone }} </span>
+          <br>
+        <span class="font-weight-bold">Email: {{ People.email }} </span>
+          <br>
+
+
+      </div>
+
+    </div>
+  {% endfor %}
+{% endblock content %}
