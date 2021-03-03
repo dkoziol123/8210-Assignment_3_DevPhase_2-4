@@ -7,10 +7,23 @@
   <h1 class="display-4">Welcome to your Recreation Application</h1>
     <br>
   <p class="lead">Let the Good Times Begin!!</p>
-  <p class="lead"
+  <p class="lead">
+       <a class="btn btn-primary btn-lg" href="{% url 'people_list' %}" role="button">View All Friends and Colleages</a>
+       <a class="btn btn-primary btn-lg" href="{% url 'selection_list' %}" role="button">View All Selection</a>
   </p>
+    <div class="card-body">
+
+
+    </div>
+
+
+
 
 </div>
+
+
 {% endblock content %}
+
+
 
 STATIC_URL = '/static/'
